@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Firefox Regex Search",
+  "name": "Regex Search",
   "description": "An extension for Regex Search in lieu of Firefox's CTRL+F",
   "version": "1.0.8",
   "icons": {
