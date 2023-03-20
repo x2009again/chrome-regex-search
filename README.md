@@ -19,6 +19,7 @@ Note that textarea and input elements will not be highlighted as they cannot be 
 
 Go to https://chrome.google.com/webstore/detail/chrome-regex-search/bpelaihoicobbkgmhcbikncnpacdbknn?hl=en&gl=US
 Click 'Add to Chrome'
+Or https://addons.mozilla.org/zh-CN/firefox/addon/regex-search3/ Click 'Add to Firefox'
 
 ## Screenshots
 <img src="https://raw.githubusercontent.com/rogershen/chrome-regex-search/master/google-webstore/googlenews.png" />
@@ -43,7 +44,8 @@ Type your custom command (ie CTRL+SHIFT+F)
 <br />
 Now whenever, you want to open the popup simply enter your custom command.
 
-
+## 更新
+增加firfox分支，并发布到https://addons.mozilla.org
 
 
 ## License
