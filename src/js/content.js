@@ -98,10 +98,36 @@ function highlight(regex, highlightColor, selectedColor, textColor, maxResults) 
 /* Remove all highlights from page */
 function removeHighlight() {
   while (node = document.body.querySelector(HIGHLIGHT_TAG + '.' + HIGHLIGHT_CLASS)) {
-    node.outerHTML = node.innerHTML;
+    if(node.previousSibling){
+      node.previousSibling.textContent=node.previousSibling.textContent+node.innerHTML+(node.nextSibling?node.nextSibling.textContent:"");
+      node.nextSibling.remove();
+      node.remove();
+    }
+    else if(node.nextSibling){
+      node.nextSibling.textContent=node.innerHTML+node.nextSibling.textContent;
+      node.remove()
+    }
+    else
+    {
+      node.outerHTML = node.innerHTML;
+    }
+    // node.outerHTML = node.innerHTML;
   }
     while (node = document.body.querySelector(HIGHLIGHT_TAG + '.' + SELECTED_CLASS)) {
-    node.outerHTML = node.innerHTML;
+      if(node.previousSibling){
+        node.previousSibling.textContent=node.previousSibling.textContent+node.innerHTML+(node.nextSibling?node.nextSibling.textContent:"");
+        node.nextSibling.remove();
+        node.remove();
+      }
+      else if(node.nextSibling){
+        node.nextSibling.textContent=node.innerHTML+node.nextSibling.textContent;
+        node.remove()
+      }
+      else
+      {
+        node.outerHTML = node.innerHTML;
+      }
+    // node.outerHTML = node.innerHTML;
   }
 };
 
