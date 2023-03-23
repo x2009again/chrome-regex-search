@@ -9,7 +9,7 @@ var ENABLE_CASE_INSENSITIVE_TITLE = "Enable case insensitive search";
 var DISABLE_CASE_INSENSITIVE_TITLE = "Disable case insensitive search";
 var HISTORY_IS_EMPTY_TEXT = "Search history is empty.";
 var CLEAR_ALL_HISTORY_TEXT = "Clear History";
-var DEFAULT_CASE_INSENSITIVE = false;
+var DEFAULT_CASE_INSENSITIVE = true;
 var MAX_HISTORY_LENGTH = 30;
 /*** CONSTANTS ***/
 
